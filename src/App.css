@@ -32,6 +32,9 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -93,6 +96,9 @@ nav.navbar {
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -240,11 +246,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.banner.Containertextname{ width: 100%;
+  height: 100%;
+  position: relative;}
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -346,6 +358,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 0;
   position: relative;
   background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .project h2 {
 	font-size: 45px;
@@ -471,6 +486,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .contact img {
   width: 92%;
@@ -483,6 +501,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input, .contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   color: #fff;
@@ -543,11 +564,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .newsletter-bx {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background: #FFFFFF;
   border-radius: 55px;
   color: #121212;
