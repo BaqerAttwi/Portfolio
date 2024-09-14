@@ -1,10 +1,13 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './font.css';
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { TypeUnderline } from "react-bootstrap-icons";
 
 export const Projects = () => {
 
@@ -30,11 +33,13 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Project-3</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <div className="project">
+                  <Tab.Content id="slideInUp" className="isVisible">
                     <Tab.Pane eventKey="first">
                       <Row>
                         <Col md={6} ><img src= {projImg1} alt="image p 1"  style={{marginBottom:'8vh'}}></img></Col>
                         <Col md={6} >
+                       
                         <ul><li><h1>Project-name: Food-Store Menu</h1></li>
                         <li style={{listStyle:'none'}}><h3>    Languages: PHP,HTML5,CSS,Bootstrap</h3></li>
                         <li style={{listStyle:'none'}}><h5>   Admin Pannel: ADD and Delete Items, Check review for Store </h5></li>
@@ -50,15 +55,16 @@ export const Projects = () => {
                     <Col md={6} ><img src= {projImg2} alt="image p 1" style={{marginBottom:'8vh'}}></img></Col>
                       <Col  md={6}>
                     <ul><li><h1>Project-name: Social Media</h1></li>
-                        <li style={{listStyle:'none'}}><h3>    Languages:React,Node,Express,Bootstrap,MySQL</h3></li>
-                        <li  ><h5> API to check <li style={{listStyle:'none'}}>Nationality</li><li style={{listStyle:'none'}}>check text and image  before posting </li></h5></li>
-                        <li ><h5>   Animation resposnive design  </h5></li>
-                        <li ><h5>   users view posts and they can interact by comment and like   </h5></li>
-                        <li><h5>  Users can add friend also  (accept,deny)   </h5></li>
-                        <li ><h5>  Can see comments and likes on his post </h5></li>
-                        <li ><h5>  Users can search for each other   </h5></li>
-                        <li style={{listStyle:'none'}}><h5> GIthub-link :</h5> <a href="https://github.com/BaqerAttwi/SocialMedia" target="_blank" rel="noopener noreferrer">
-                        https://github.com/BaqerAttwi/SocialMedia
+                        <li><h6>Languages:React,Node,Express<br></br>,Bootstrap,MySQL</h6></li>
+                        <li  ><h6> API to check <li style={{listStyle:'none'}}>Nationality</li>
+                        <li style={{listStyle:'none'}}>check text and image  before posting </li></h6></li>
+                        <li ><h6>   Animation resposnive design  </h6></li>
+                        <li ><h6>   users view posts and they can interact by comment and like   </h6></li>
+                        <li><h6>  Users can add friend also  (accept,deny)   </h6></li>
+                        <li ><h6>  Can see comments and likes on his post </h6></li>
+                        <li ><h6>  Users can search for each other   </h6></li>
+                        <li style={{listStyle:'none'}}><h6> GIthub-link :</h6> <a href="https://github.com/BaqerAttwi/SocialMedia" target="_blank" rel="noopener noreferrer"><h6>
+                        SocialMedia</h6>
 </a>
   </li></ul></Col></Row>
   
@@ -67,21 +73,21 @@ export const Projects = () => {
                     <Row>
                        
                         <ul><li><h1>Project-name:Chat APP (IN Progress)</h1></li>
-                        <li style={{listStyle:'none'}}><h3>    Languages: React,Node,express,Mangodb,websocket.io</h3></li>
-                        <li style={{listStyle:'none'}}><h5> Developed a ChatApp with React for a responsive design.
-</h5></li>
-                        <li style={{listStyle:'none'}}><h5>  Implemented an API to validate and check text before sending.
- </h5></li>
-                        <li style={{listStyle:'none'}}><h5>Enabled real-time messaging, allowing users to interact seamlessly within the app.
-                         </h5></li>
-                         <li style={{listStyle:'none'}}><h5>Ensured secure communication with encrypted messaging.  </h5></li>
-                        <li style={{listStyle:'none'}}><h5> GIthub-link :</h5> <a href="https://github.com/BaqerAttwi/chatapp" target="_blank" rel="noopener noreferrer">
-                        https://github.com/BaqerAttwi/chatapp
+                        <li style={{listStyle:'none'}}><h3>    Languages:React,Node<br></br>,express,Mangodb,websocket.io</h3></li>
+                        <li style={{listStyle:'none'}}><h6> Developed a ChatApp with React for a responsive design.
+</h6></li>
+                        <li style={{listStyle:'none'}}><h6>  Implemented an API to validate and check text before sending.
+ </h6></li>
+                        <li style={{listStyle:'none'}}><h6>Enabled real-time messaging, allowing users to interact seamlessly within the app.
+                         </h6></li>
+                         <li style={{listStyle:'none'}}><h6>Ensured secure communication with encrypted messaging.  </h6></li>
+                        <li style={{listStyle:'none'}}><h6> GIthub-link :</h6> <a href="https://github.com/BaqerAttwi/chatapp" target="_blank" rel="noopener noreferrer">
+                        ChatApp
 </a>
   </li></ul>
                          </Row>
              </Tab.Pane>
-                  </Tab.Content>
+                  </Tab.Content></div>
                 </Tab.Container>
               </div>}
             </TrackVisibility>

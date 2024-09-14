@@ -208,6 +208,7 @@ nav.navbar .navbar-toggler-icon {
 nav.navbar .navbar-toggler-icon:focus {
 	border-bottom: 2px solid #fff;
 }
+.isVisible ul li{ font-size: clamp(1rem, 2.5vw, 2rem);}
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
